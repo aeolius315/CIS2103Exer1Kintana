@@ -11,13 +11,14 @@ public class Player {
     String name;
     int chips;
     boolean inPlay;
-
+    
+    Scanner myPlayer = new Scanner(System.in);
+    Scanner myChips = new Scanner(System.in);
+    
     Player() {
         System.out.println("Input Name: ");
-        Scanner myPlayer = new Scanner(System.in);
         String userName = myPlayer.nextLine();
         System.out.println("Enter Amount: ");
-        Scanner myChips = new Scanner(System.in);
         int userChips = myChips.nextInt();
         name = userName;
         chips = userChips;

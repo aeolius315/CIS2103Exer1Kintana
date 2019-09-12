@@ -21,7 +21,7 @@ public class Poker {
             if(addPlayers == true){
                 player.add(new Player());
                 count++;
-            } else {
+            } else{
                 if(count < 2){
                     addPlayers = true;
                 } 

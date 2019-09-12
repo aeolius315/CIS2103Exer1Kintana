@@ -6,6 +6,11 @@
 
 package poker;
 
-public class Dealer {
+public class Dealer{
     
+    
+    
+    public void shuffleCard(){
+        
+    }
 }

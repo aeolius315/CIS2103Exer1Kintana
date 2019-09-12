@@ -9,12 +9,28 @@ import java.util.*;
 
 public class Poker {
 
-    
-    
     public static void main(String[] args) {
         System.out.println("Welcome to Texas Hold'em Poker");
-        Player player1 = new Player();
-//        System.out.println(player1.name);
-//        System.out.println(player1.chips);
+        ArrayList<Player> player = new ArrayList<Player>();
+        byte count = 0;
+        boolean addPlayers;
+        do{
+            System.out.println("Add Player");
+            Scanner myVal = new Scanner(System.in);
+            addPlayers = myVal.nextBoolean();
+            if(addPlayers == true){
+                player.add(new Player());
+                count++;
+            } else {
+                if(count < 2){
+                    addPlayers = true;
+                } 
+            }
+        }while(addPlayers == true && count < 8);
+//        boolean playRound = true;
+//        
+//        while(playRound != false){
+//            
+//        }
     }
 }
